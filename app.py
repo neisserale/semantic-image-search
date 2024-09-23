@@ -50,18 +50,18 @@ painters = [p.replace('_', ' ') for p in painters]
 st.sidebar.title("Painters:")
 
 # ## filter painters
-# search_query = st.sidebar.text_input('Write something', key='search_query')
+search_query = st.sidebar.text_input('Write something', key='search_query')
 
-# if search_query:
-#     painters_filter = [p for p in painters if search_query.lower() in p.lower()]
+if search_query:
+    painters_filter = [p for p in painters if search_query.lower() in p.lower()]
 
-# else:
-#     painters_filter = painters
+else:
+    painters_filter = painters
 
 ## create sidebar with 2 columns
 cols = 2
 col1, col2 = st.sidebar.columns(cols)
-for idx, painter in enumerate(painters):
+for idx, painter in enumerate(painters_filter):
     if idx % cols == 0:
         with col1:
             ## select a button
