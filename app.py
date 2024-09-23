@@ -69,7 +69,7 @@ for idx, painter in enumerate(painters_filter):
                 st.session_state.painter_selected = painter
                 st.session_state.selected_image = None
                 st.session_state.painter_selected_changed = True
-                st.rerun()
+                #st.rerun()
 
     else:
         with col2:
@@ -78,7 +78,7 @@ for idx, painter in enumerate(painters_filter):
                 st.session_state.painter_selected = painter
                 st.session_state.selected_image = None
                 st.session_state.painter_selected_changed = True                
-                st.rerun()
+                #st.rerun()
 
 ## title of the app
 st.title('Semantic Image Search')
