@@ -157,7 +157,7 @@ else:
 
     ## add subtitle
     st.markdown(f"""
-    <h3>Pinturas de: <span style='color: #FF4B4B;'>{painter_selected}</span></h3>
+    <h3>Paintings of: <span style='color: #FF4B4B;'>{painter_selected}</span></h3>
     """, unsafe_allow_html=True)
 
     ## show paintings in columns
