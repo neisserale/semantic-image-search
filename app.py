@@ -135,7 +135,7 @@ if st.session_state.selected_image is not None:
         similarities.append([img_path, round(d, 4)])        
 
     ## show image recommendation
-    st.subheader('Top 10 recommedations:')
+    st.subheader('Top 10 recommendations:')
 
     cols = 10
     columns = st.columns(cols)
