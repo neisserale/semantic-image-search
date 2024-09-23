@@ -15,9 +15,6 @@ st.set_page_config(
     layout='wide'
 )
 
-## title of the app
-st.title('Semantic Image Search')
-
 #----------------------------------------------------------------------------------------
 # Load models
 #----------------------------------------------------------------------------------------
@@ -49,7 +46,6 @@ painters = [p.replace('_', ' ') for p in painters]
 #----------------------------------------------------------------------------------------
 # StreamLit App
 #----------------------------------------------------------------------------------------
-
 ## title sidebar
 st.sidebar.title("Painters:")
 
@@ -83,6 +79,9 @@ for idx, painter in enumerate(painters):
                 st.session_state.selected_image = None
                 st.session_state.painter_selected_changed = True                
                 st.rerun()
+
+## title of the app
+st.title('Semantic Image Search')
 
 ## show images by default
 if 'painter_selected' not in st.session_state:
